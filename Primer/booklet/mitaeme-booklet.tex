@@ -1,0 +1,330 @@
+\documentclass[a4paper, titlepage]{article}
+\usepackage[print]{booklet}
+
+\usepackage{fontspec}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[english]{babel}
+\usepackage{csquotes}
+ \usepackage{multirow}
+ \usepackage{float}
+\usepackage{tabularray}
+\usepackage{xeCJK}
+\setCJKmainfont{NotoSansCJKsc-Regular}
+\newfontfamily\afont{Noto Sans Arabic}
+\newfontfamily\hmfont{NotoSansDevanagari-Regular}
+\newfontfamily\benfont{NotoSansBengali-Regular}
+\newfontfamily\tlgfont{NotoSansTelugu-Regular}
+\newfontfamily\cuneiffont{NotoSansCuneiform-Regular}
+
+\usepackage[notes,backend=bibtex]{biblatex-chicago}
+
+\setmainfont{Times New Roman}
+
+\bibliography{bibliography}
+
+\setpdftargetpages
+\begin{document}
+\title{A Primer on Mitaeme}
+\author{Elia}
+\date{}
+\maketitle
+
+\section{SPELLING \& PRONUNCIATION}
+
+Mitaeme features twelve consonants. In this primer, the letter used to write each consonant will be included between angle brackets, $\langle$…$\rangle$, while the pronunciation will be written in the International Phonetic Alphabet and placed between forward slashes, \mbox{/…/}, and a rough example in Standard American English provided.
+
+\begin{table}[H]
+\centering
+\begin{tblr}{
+  cells = {c},
+  cell{2}{3} = {r=2}{},
+}
+{$\langle$m$\rangle$ /m/\\``mail"}                     & {$\langle$n$\rangle$ /n/\\``nail"} &                                                                   &                                       \\
+{$\langle$p$\rangle$ /p/\\``pin"}                      & {$\langle$t$\rangle$ /t/\\``tin"}  & {$\langle$c$\rangle$ /t͡ʃ \textasciitilde{} ʃ/\\``chin" \textasciitilde{} ``shin" } & {$\langle$k$\rangle$ /k/\\``kin"}                      \\
+{$\langle$f$\rangle$ /ɸ \textasciitilde{} f/\\``fed"}  & {$\langle$s$\rangle$ /s/\\``said"} &                                                                   & {$\langle$h$\rangle$ /x \textasciitilde{} h/\\``head"} \\
+{$\langle$w$\rangle$ /w \textasciitilde{} v/\\``wack"} & {$\langle$l$\rangle$ /l/\\``lack"} & {$\langle$y$\rangle$ /j/\\``yak"}                                                  &                                       
+\end{tblr}
+\end{table}
+
+All consonants and vowels are written with only one letter and their spelling and pronunciation never changes. Thus, $\langle$c$\rangle$ is always /t͡ʃ/, the sound at the beginning of ``choose,'' never /k/, the sound at the beginning of “car” which is always written with a $\langle$k$\rangle$. Mitaeme's vowels are also quite simple as there are only five:
+
+\begin{table}[H]
+\centering
+\begin{tblr}{
+  cells = {c},
+  cell{3}{1} = {c=2}{},
+}
+{$\langle$i$\rangle$ /i/\\``leak"}  & {$\langle$u$\rangle$ /u/\\``boot"} \\
+{$\langle$e$\rangle$ /e/\\``speck"} & {$\langle$o$\rangle$ /o/\\``boat"} \\
+{$\langle$a$\rangle$ /a/\\``hand"}  &                   
+\end{tblr}
+\end{table}
+
+Technically, the Standard American English approximates here are not very accurate. English's $\langle$e$\rangle$, $\langle$o$\rangle$, and $\langle$a$\rangle$ are not the same as their Mitaemen counterparts. Mitaeme's vowels are closest to those found in Spanish, as in /i/ ``pira,'' /e/ ``pero,'' /a/ ``casa,'' /u/ ``curso,'' and /o/ ``coser.'' Similarly, the Japanese vowels are good examples: /i/ ``二胡 (niko),'' /e/ ``猫 (neko),'' /a/ ``中 (naka),'' /u/ ``茎 (kuki),'' and /o/ ``ここ (koko).'' However, the Mitaemen /u/ is rounded, unlike the Japanese /u/.
+
+Vowels are always pronounced the same way regardless of where they appear, and they never affect the pronunciation of adjacent consonants. However, there are certain rules concerning the pronunciation of diphthongs (which we'll get to soon). Having covered all seventeen phonemes, we can now talk about the ways they can combine together.
+
+Finally, there exists the sound, /ɾ/, an alveolar tap (the single ``r'' in Spanish words such as ``pero'' or ``para'' or, in some American and Canadian dialects of English, the ``tt'' in ``butter'' or ``bottle'') which is written $\langle$r$\rangle$. This is a marginal phoneme in Mitaeme and it is only used in proper nouns or adjectives referring to specific people or places. For example, this enables Mitaeme to adopt the word, {\hmfont मराठी} (marāṭhī), as $\langle$marati$\rangle$ or Росси́я (Rossíja) as $\langle$rasiya$\rangle$. This sound is never found in general vocabulary.
+
+\section{SYLLABLE STRUCTURE}
+
+Syllables are described as having having an optional beginning consonant (an onset), an optional on-glide, a vowel, an optional off-glide, and an optional ending consonant (a coda).
+
+\begin{table}[H]
+\centering
+\begin{tblr}{
+cells = {c},
+  hline{2} = {-}{},
+}
+Onset     & On-Glide  & Vowel           & Off-Glide & Coda    \\
+ω         & μ         & ν               & μ         & κ       \\
+\{ any \} & \{ j w \} & \{ i e u o a \} & \{ j w \} & \{ n \} 
+\end{tblr}
+\end{table}
+
+The on-glide may only appear when there is an onset consonant, while the off-glide can appear with or without a coda. However, no on-glide is allowed when the onset is either /j/ or /w/. In addition, /j/ cannot serve as an on-glide or off-glide in a syllable containing the vowel /i/, and the same goes for /w/ and the vowel /u/. Lastly, a word cannot contain a syllable ending in a vowel followed by a syllable beginning with another vowel.
+
+When serving as a glide, /j/ is written as $\langle$i$\rangle$ and /w/ is written as $\langle$u$\rangle$. This helps distinguish between syllables ending in a nasal that are followed by an onset /j/ and those ending in a vowel and followed by an onset /n/ with an on-glide /j/, as in $\langle$ania$\rangle$ /a.nja/ and $\langle$anya$\rangle$ /an.ja/. Similarly, a word like $\langle$aiata$\rangle$ is pronounced /aj.a.ta/, whereas $\langle$ayata$\rangle$ is always /a.ja.ta/. However, this does lead to some potential ambiguities that require an explicit rule: when following an onset consonant, the sequences $\langle$ui$\rangle$ and $\langle$iu$\rangle$ are always on-glides followed by vowels, as in /kwi/ and /kju/, and are never vowels followed by off-glides, as in */kuj/ or */kiw/. In any case, no words are distinguished based on syllable boundaries alone, but for clarity and aesthetics this spelling is preferred.
+
+A coda /n/ is pronounced and written as $\langle$m$\rangle$ when it appears before /m p w/. Its spelling remains the same before $\langle$k$\rangle$ but it is pronounced as [ŋ] (the ``ng'' in ``sing''). Otherwise, it is written $\langle$n$\rangle$ and pronounced /n/.
+
+\section{COMPOUNDS}
+
+A quick note on compound words is required, as this introduces an additional character into the spelling system: the hyphen. Compound words have each constituent word separated by a hyphen. Thus, the word for ``motorcycle'' which is composed of the Mitaemen words, $\langle$moto$\rangle$  and $\langle$saikale$\rangle$, is written as $\langle$moto-saikale$\rangle$. While this is prescribed, it is one of Mitaeme's only flexible rules. In a situation where the meaning of a word is relatively unambiguous, dropping the hyphen from compound words is common. You may see both $\langle$moto-saikale$\rangle$ and $\langle$motosaikale$\rangle$. The hyphen is used to disambiguate when necessary and to form new compounds that aren't already in common use.
+
+Some lexicalized adjective-noun pairs—such as the plural second- and third-person pronouns, $\langle$ta nin$\rangle$ and $\langle$ta ye$\rangle$—may also appear hyphenated,  $\langle$ta-nin$\rangle$ and $\langle$ta-ye$\rangle$, though this is done for clarity's sake and ease-of-reading.
+
+\section{GRAMMAR}
+
+Mitaeme's grammar is designed to be elegant,  simple, and fun. We can summarize its basic structure in a few rules.
+
+\begin{enumerate}
+	\item \textbf{No Inflection} — Mitaemen words have only one form and it never changes. Nouns do not take cases, and verbs do not change form to agree with their subject or even to indicate certain tenses. Instead, extra words are included to convey this information. Nouns can undergo reduplication (being repeated) to indicate plurality, and a reduplication of verbs may indicate emphasis or pluractionality. While inflection and affixation are absent, compounding is present, as already discussed.  Furthermore, certain particles, such as $\langle$hase$\rangle$, can be used to make nouns into verbs and vice versa.
+	\begin{itemize}
+		\item pesin pesin suo-tei ale a mi te kasa — person\textasciitilde{}\textsc{pl} yesterday go \textsc{loc 1sg gen} house\\\textit{People went to my house yesterday.}
+		\item peinta-pesin ale kan inlan-eme puko — painter go read English book\\\textit{The painter will read an English book.}
+		\item mi le peinta-hase ta-ye te auto — \textsc{1sg pfv} paint-\textsc{vb} pl-3 \textsc{gen} car \\\textit{I painted their cars.}
+	\end{itemize}
+	\item \textbf{SVO Word Order} — Mitaeme features an SVO, or subject-verb-object, word order. If context is clear, the subject may be dropped. Mitaeme also features zero copula, meaning you never need to include words like ``is'' and ``are''—they are implied.
+	\begin{itemize}
+		\item mi te kafe sahin — \textsc{1sg} \textsc{gen} coffee hot\\\textit{My coffee is hot.}
+		\item nin ci cokolate — \textsc{2sg} eat chocolate\\\textit{You are eating chocolate.}
+	\end{itemize}
+	\item \textbf{ Preposition → Possessor → Adjective → Noun → Relative Clause  } — Modifiers such as possessors and adjectives precede the nouns they modify. However, relative clauses follow their respective noun. Gentive constructions, which can indicate possession, origin, or composition are marked with the particle, $\langle$te$\rangle$. Relative clauses are introduced by the particle, $\langle$ke$\rangle$. Compounds have their head noun in the rightmost position. For example a ``teahouse'' is a $\langle$ca-kasa$\rangle$, literally ``tea-house,'' rather than a $\langle$*kasa-ca$\rangle$, as it might be in a language such as Spanish.
+	\begin{itemize}
+		\item nin te pueno ca citala — \textsc{2sg} \textsc{gen} good tea cold\\\textit{Your good tea is cold.}
+		\item nin te ca ke mi tinke pueno — \textsc{2sg gen} tea \textsc{rel 1sg} drink good\\\textit{Your tea I am drinking is good.}
+	\end{itemize}
+	\item \textbf{Adverb → Verb} — Similar to adjectives, adverbs precede the verb they modify. In fact, adjectives and adverbs are a single class of words that may be used in either position, where meaningfully applicable. The placement of adverbs is not flexible as it is in English; they cannot come afterwards.
+	\begin{itemize}
+		\item nin yuwa kan puka — \textsc{2sg} early read book\\\textit{You read a book early.}
+		\item mi kai tinke kai ca — \textsc{1sg} much drink much tea\\\textit{I often drink a lot of tea.}
+	\end{itemize}
+	\item \textbf{Serial Verb Constructions} — Mitaeme makes use of serial verb constructions to convey complex events. This is done by chaining verbs together, one after the other. If a verb is followed by an object in one of these chains, it is assumed to be the subject or instrument of the subsequent verb.
+	\begin{itemize}
+		\item mi usa naife kata papeu — \textsc{1sg} use knife cut paper\\\textit{I use the knife to cut the paper.}
+		\item ye sita leka siensia puka — \textsc{3sg} sit write science book\\\textit{She sits and writes a scientific book.}
+	\end{itemize}
+	\item \textbf{Particle Order} — Particles may appear sentence-initially, sentence-finally, or before the verb they modify. Double negatives may be used for emphasis without canceling out. In serial verb constructions, particles must come before any verb which they specifically modify. This includes situations in which auxiliary verbs, such as $\langle$pei$\rangle$, are used in tandem with other verbs.
+	\begin{itemize}
+		\item mi na tinke mi te ca na — \textsc{1sg} \textsc{neg} drink \textsc{1sg} \textsc{gen} tea \textsc{neg}\\\textit{I do not drink my tea.}
+		\item ta pesin pei siyou akuce — all person \textsc{pv} free birth\\\textit{All humans are born free.}
+	\end{itemize}
+\end{enumerate}
+
+There are no exceptions to the rules outlined here, except perhaps in the writing of personal names. Otherwise, one shouldn't loan words into Mitaeme without altering them, if necessary, to fit the pronunciation, spelling, and syllable structure rules outlined here. For this reason, there is a strong preference for words that feature sounds with close analogues in Mitaeme. By maintaining a 1-to-1, consistent spelling system and a bare-bones sound system, we avoid putting unnecessary strain on new learners, even if it does necessitate making alterations to new words added to the lexicon. On this topic, we might as well devote the last section of this primer to a few vocabulary words so that you can start using the language.
+
+\section{FUNCTIONAL VOCABULARY}
+
+We're going to separate our vocabulary lists into two sections: functional and substantive. In this list, we'll cover many of the function words that appear with higher frequency in Mitaemen texts.
+
+\begin{itemize}
+	\item \textbf{\textit{mi}} — \textit{pronoun}, ``I / me'' — from many Indo-European languages — This is the singular, first-person pronoun. Since Mitaeme does not ever change the forms of its words, there is no difference between ``I'' and ``me.''
+	\begin{itemize}
+		\item mi ale a nin te kasa — \textsc{1sg} go \textsc{loc 2sg gen} house \\\textit{I am going to your house.}
+	\end{itemize}
+	\item \textbf{\textit{nin}} — \textit{pronoun}, ``you'' — from Mandarin Chinese — This is the singular, second-person pronoun. It is used to refer to the listener. Mitaeme does not make any distinction between informal and formal forms of ``you,'' as can be found in many of the Romance and Sinitic languages, among others. The formal pronoun from Mandarin, 您 (nín), is borrowed rather than the informal, 你 (nǐ), due to the similarity between $\langle$mi$\rangle$ and $\langle$ni$\rangle$. By adding the $\langle$n$\rangle$, it is easier to distinguish between the first- and second-person in casual speech.
+	\begin{itemize}
+		\item nin ai mi ma — \textsc{2sg} love \textsc{1sg int} \\\textit{Do you love me?}
+	\end{itemize}
+	\item \textbf{\textit{ye}} — \textit{pronoun}, ``they/she/he'' — from Hindustani — This is the singular, third-person pronoun. It is used to refer to a single person other than the speaker or listener. Mitaeme does not distinguish between gendered third-person pronouns such as ``he'' or ``she,'' instead using a single pronoun for both, similar to languages like (spoken) Finnish.
+	\begin{itemize}
+		\item ye solen peinta tisa mesa ke mi pai — \textsc{3sg oblig} paint \textsc{prox} table \textsc{rel 1sg} buy \\\textit{They should paint this table I bought.}
+	\end{itemize}
+	\item \textbf{\textit{mi-mi}} / \textbf{\textit{mimi}} — \textit{pronoun}, ``we (exclusive)'' — There are two forms of ``we'' in Mitaeme; the first, $\langle$mimi$\rangle$, is exclusive, meaning it does not include the listener. For example, if you were talking to someone about how you and your friends went somewhere, you would use $\langle$mimi$\rangle$, but if the person you were speaking to was also there, then you would use the inclusive form, $\langle$minin$\rangle$.
+	\begin{itemize}
+		\item mimi hafe kai auto — 1\textasciitilde{}\textsc{pl} have many car \\\textit{We have many cars.}
+	\end{itemize}
+	\item \textbf{\textit{mi-nin}} /  \textbf{\textit{minin}} — \textit{pronoun}, ``we (inclusive)'' — This version of ``we'' is inclusive, meaning it includes the listener.
+	\begin{itemize}
+		\item so minin mita (mita) — \textsc{aff 1+2pl} friend(\textasciitilde{}\textsc{pl}) \\\textit{Yes, we are friends.}
+	\end{itemize}
+	\item \textbf{\textit{ta nin}}  / \textbf{\textit{ta-nin}} — \textit{pronoun}, ``you all'' — calque of English, \textit{y'all} — This is the plural, second-person pronoun. It is used to talk about groups that include the listener but not the speaker.
+	\begin{itemize}
+		\item ta nin ma leka pa pensi — all 2 \textsc{int} write \textsc{instr} pencil \\\textit{Did you all write in pencil?}
+	\end{itemize}
+	\item \textbf{\textit{ta ye}}  / \textbf{\textit{ta-ye}} — \textit{pronoun}, ``they all'' — extended from $\langle$ta nin$\rangle$ — This is the plural, third-person pronoun. It is used to talk about groups that include neither the speaker nor the listener.
+	\begin{itemize}
+		\item ta ye na canna usa kampiuta ne — all 3 \textsc{neg} know use computer \textsc{emph.int} \\\textit{They don't know how to use a computer, right?}
+	\end{itemize}
+	\item \textbf{\textit{cunya}} —  \textit{noun / adjective}, ``zero / 0'' — from Sanskrit, {\hmfont शून्य} (śūnyá) — Numbers in Mitaeme all act like both nouns and adjectives. Therefore, one can use $\langle$cunya$\rangle$ to both modify another noun or to refer to ``zero'' of something.
+	\begin{itemize}
+		\item mi hafe cunya pati — \textsc{1sg} have zero bowl — I have zero bowels.
+	\end{itemize}
+	\item \textbf{\textit{yi}} —  \textit{noun / adjective}, ``one / 1'' — from Mandarin Chinese, 一 (yī)
+	\item \textbf{\textit{tu}} —  \textit{noun / adjective}, ``two' / 2' — from English, \textit{two}
+	\item \textbf{\textit{tin}} —  \textit{noun / adjective}, ``three / 3'' — from Marathi, {\hmfont तीन} (tīn)
+	\item \textbf{\textit{apa}} —  \textit{noun / adjective}, ``four / 4'' — from Tagalog, \textit{apat}
+	\item \textbf{\textit{lima}} —  \textit{noun / adjective}, ``five / 5'' — from Indonesian, \textit{lima}
+	\item \textbf{\textit{sita}} —  \textit{noun / adjective}, ``six / 6'' — from Arabic, {\afont  ستة } (sita)
+	\item \textbf{\textit{siete}} —  \textit{noun / adjective}, ``seven / 7'' — from Spanish, \textit{siete}
+	\item \textbf{\textit{haci}} —  \textit{noun / adjective}, ``eight / 8'' — from Japanese, 八 (hachi)
+	\item \textbf{\textit{no}} —  \textit{noun / adjective}, ``nine / 9'' — from Hindustani, {\hmfont नौ} (nau)
+	\item \textbf{\textit{sen}} —  \textit{noun / adjective}, ``ten / 10'' — from German, \textit{zehn}
+	\item \textbf{\textit{kai}} —  \textit{adjective}, ``many / much / a lot'' — from Hindustani, {\hmfont कई} (kaī) — This is a highly flexible word; it can be used to indicate a lot of something, as in $\langle$kai tei$\rangle$, ``many days,'' or frequency as in $\langle$mi kai ale$\rangle$, ``I often go.''
+	\begin{itemize}
+		\item mi hatie kai kafe koi koi — \textsc{1sg} want many coffee please\textasciitilde{}\textsc{emph} \\\textit{I want a lot of coffee, please.}
+	\end{itemize}
+	\item \textbf{\textit{koi}} —  \textit{interjection / particle}, ``please / thank you / excuse me / would you,'' \textsc{optative (opt)} — from Cantonese, 唔該 (m4 goi1) — Mitaeme makes use of a single word for both ``please'' and ``thank you,'' and it can also be used as a particle to indicate the optative mood or to politely ask people to do something.
+	\item \textbf{\textit{te}} —  \textit{particle}, \textsc{genitive (gen)} — from Mandarin, 的 (de) — You have already seen much of this particle, but to be explicit: it serves as a genitive marker, coming after a noun and indicating possession, origin, or composition.
+	\begin{itemize}
+		\item mi hatie nin te cala ke yena pesin hafe — \textsc{1sg} want \textsc{2sg gen} water \textsc{medi} person have \\\textit{I want your water which that person has.}
+	\end{itemize}
+	\item \textbf{\textit{ke}} —  \textit{particle}, \textsc{relativizer (rel)} — from Spanish, que — The relativizer particle is used to introduce a relative clause which can modify a noun or serve as a complement to certain verbs. When modifying a noun, the head noun (the word being modified by the relative clause) may take the role of subject or object. It may also take the role of location, as in ``the place that I went to,'' or instrument, as in ``the knife I cut the cake with,'' via the addition of a preposition between the modified noun and the relativizer particle.
+	\begin{itemize}
+		\item mi tampien ale a yena meta a ke nin ale — \textsc{1sg} also go \textsc{loc medi} place \textsc{loc rel 2sg} go \\\textit{I have also been to that place you went to.}
+		\item mi le kome hafe yena naife pa ke nin kata keike — \textsc{1sg pfv} come have \textsc{medi} knife \textsc{instr rel 2sg} cut cake \\\textit{I brought the knife with which you cut the cake.}
+	\end{itemize}
+	\item \textbf{\textit{ma}} —  \textit{interjection / particle}, \textsc{interrogative (int)} — from Mandarin, 吗 (ma) — The interrogative particle is added to sentences to make them into questions. It can also modify nouns such as $\langle$meta$\rangle$ ``place,'' $\langle$pesin$\rangle$ ``person,'' $\langle$wa$\rangle$ ``thing'' in order to make $\langle$ma meta$\rangle$ ``where,'' $\langle$ma pesin$\rangle$ ``who,'' and $\langle$ma wa$\rangle$ ``what'.''
+	\begin{itemize}
+		\item ma pesin yena — \textsc{int} person \textsc{medi} \\\textit{Who is that?}
+	\end{itemize}
+	\item \textbf{\textit{so}} — \textit{interjection / particle}, \textsc{emphatic / affirmative (emph / aff)} — from English, \textit{so}, and Japanese, そう (sou) — The particle, $\langle$so$\rangle$, is the general agreement / emphatic particle, used to indicate that one agrees with something or to strongly assert what one is saying.
+	\begin{itemize}
+		\item so ta ye sisua — \textsc{emph} all 3 student \\\textit{Yes, they are students. / They really are students.}
+	\end{itemize}
+	\item \textbf{\textit{na}} — \textit{interjection / particle}, \textsc{negative (neg)} — This is the general negative, used to indicate disagreement or that something is not true.
+	\begin{itemize}
+		\item na ta ye sisua — \textsc{neg} all 3 student \\\textit{They are not students.}
+	\end{itemize}
+	\item \textbf{\textit{pei}} — \textit{auxiliary verb}, \textsc{passive voice (pv)}  — from Mandarin, 被 (bèi) — The passive voice auxiliary takes a transitive verb (one that requires an object) and makes it intransitive (one that requires only a subject), elevating the old object to the position of the new subject. The old subject may be reintroduced with the preposition, $\langle$pa$\rangle$. Any indirect object can take the position of the old object.
+	\begin{itemize}
+		\item metisin ma pei tewa a nin pa ye — medicine \textsc{int pv} give \textsc{loc 2sg instr 3sg} \\\textit{Was the medicine given to you by her?}
+	\end{itemize}
+	\item \textbf{\textit{solen}} — \textit{auxiliary verb}, \textsc{obligatory (oblig)} — from German, \textit{sollen} — This auxiliary marks obligation, what one ought or should do.
+	\begin{itemize}
+		\item nin solen ale a mi te kasa — \textsc{2sg oblig} go \textsc{loc 1sg gen} house \\\textit{You should go to my house.}
+	\end{itemize}
+	\item \textbf{\textit{le}} — \textit{auxiliary verb}, \textsc{transformative (trans) / inchoative (incho) / perfective (pfv)} — from Mandarin, 了 (le) — This is a quite flexible auxiliary verb, used to indicate that an action involves a transformation or change of state; used to indicate the beginning of an action; or used to talk about a complete / completed action.
+	\begin{itemize}
+		\item mi le ale a kasa — \textsc{1sg incho} go \textsc{loc} house /  \textsc{1sg pfv} go \textsc{loc} house  \\\textit{I am going home. / I went home.}
+		\item ye (mi te) mita le — \textsc{3sg (1sg gen)} friend \textsc{trans} \\\textit{He has become my friend. / He became my friend.}
+	\end{itemize}
+	\item \textbf{\textit{hase}} — \textit{particle / verb}, ``to do / to become / to make (something)'' / \textsc{general verbalizer (vb) / causative auxiliary (caus)} — from Spanish, \textit{hacer} — This is among the most flexible verbs in the language, used to talk about the performance / carrying out of an action, the creation of something, or a transformation. Furthermore, it is used in compounds with nouns and adjectives (in the structure, $\langle$word-hase$\rangle$, turning them into verbs with the general sense of ``doing'' some typical action associated with a noun or, when combined with adjectives, the sense of ``making'' something have that attribute. When used in a pivot construction, in which the object of a preceding verb becomes the subject of the subsequent verb, $\langle$hase$\rangle$ imparts a causative voice.
+	\begin{itemize}
+		\item mi le hase ca fo nin — \textsc{1sg pfv} do \textsc{purp 2sg} \\\textit{I made tea for you.}
+		\item ta nin palu-hase kau kau  — \textsc{pl-2} milk-\textsc{vb} cow\textasciitilde{}\textsc{pl} \\\textit{You all are all milking the cows.}
+		\item mi le hase nin tewa pensi a ye — \textsc{1sg pfv caus} \textsc{2sg} give pencil \textsc{dat 3sg} \\\textit{I made you give the pencil to her.}
+		\item mi le sahin-hase nin te ca — \textsc{1sg pfv} hot-\textsc{vb} \textsc{2sg gen} tea \\\textit{I warmed-up your tea.}
+	\end{itemize}
+	\item \textbf{\textit{a}} — \textit{preposition / particle}, \textsc{locative (loc) / dative (dat)} — from Spanish, \textit{a} — This is a widely-used particle as it serves as the language's primary preposition, indicating location and direction, similar to English's ``at / on / to,'' but in addition it is used to mark the indirect objects of transitive sentences.
+	\begin{itemize}
+		\item mi ale a mi te kasa — \textsc{1sg} go \textsc{loc 1sg gen} house \\\textit{I am going to my house.}
+		\item nin le tewa cokolate a mi — \textsc{1sg pfv} give chocolate \textsc{dat 1sg} \\\textit{You gave me chocolate.}
+	\end{itemize}
+	\item \textbf{\textit{tisa}} — \textit{adjective / noun}, ``this / this thing,'' \textsc{proximal (prox)} — from English, \textit{this} — This is the proximal demonstrative, used to talk about something that is close to or associated with the speaker.
+	\begin{itemize}
+		\item tisa mesa mi te — \textsc{prox} table \textsc{1sg gen} \\\textit{This table is mine.}
+		\item tisa mi te mesa — \textsc{prox 1sg gen} table \\\textit{This is my table.}
+	\end{itemize}
+	\item \textbf{\textit{yena}} — \textit{adjective / noun}, ``that / that thing,'' \textsc{medial (medi)}  — from German, \textit{jener} — This is the medial demonstrative, used to talk about something that is close to or associated with the listener.
+	\begin{itemize}
+		\item mi na kan yena puka — \textsc{1sg neg} read \textsc{medi} book \\\textit{I am not reading that book. / I have not read that book.}
+	\end{itemize}
+	\item \textbf{\textit{akeli}} — \textit{adjective / noun}, ``that over there / that thing over there,'' \textsc{distal (dist)}  — from Portuguese, \textit{aquele} — This is the distal demonstrative, used to talk about something that is close to neither the speaker nor the listener.
+	\begin{itemize}
+		\item akeli auto hafe yelou peinta — \textsc{dist} book have yellow paint \\\textit{That car over there has yellow paint.}
+	\end{itemize}
+	\item \textbf{\textit{i}} — \textit{conjunction}, \textsc{conjunction (conj)}  — from Russian, и (i) — The coordinating conjunction, this serves to conjoin both noun phrases and clauses (unlike in some languages where separate conjunctions are used for these two roles). In this way, $\langle$i$\rangle$ is much like English's ``and.'' However, since Mitaeme makes use of serial verb constructions, you won't often see it in between verbs which share the same subject.
+	\begin{itemize}
+		\item mi le ale a kasa i ye ci — \textsc{1sg pfv} go \textsc{loc} house \textsc{conj 3sg} eat \\\textit{I went home and he ate.}
+	\end{itemize}
+\end{itemize}
+
+\section{SUBSTANTIVE VOCABULARY}
+
+Now that we've covered many of the basic function words, we can leap into some more vocabulary which should allow you to actually talk about the world around you.
+
+\begin{itemize}
+	\item \textbf{\textit{eme}} — \textit{noun}, from Sumerian, {\cuneiffont 𒅴} (eme) \\``language / tongue / tongue (body part)''
+	\item \textbf{\textit{men}} — \textit{noun}, from Cantonese, 名 (meng4-2) \\``name / given name / term''
+	\item \textbf{\textit{meta}} — \textit{noun}, from Russian, ме́сто (mésto) \\``place / location''
+	\item \textbf{\textit{wa}} — \textit{noun}, from Vietnamese, \textit{vật} \\``thing / inanimate object / abstract idea''
+	\item \textbf{\textit{asione}} — \textit{noun}, from Italian, \textit{azione} \\``action / act / deed''
+	\item \textbf{\textit{pesin}} — \textit{noun}, from Naijá, \textit{pesin} \\``person / individual / human being''
+	\item \textbf{\textit{kasa}} — \textit{noun}, from Portuguese, \textit{casa} \\``house / home''
+	\item \textbf{\textit{teca}} — \textit{noun}, from Hindustani, {\hmfont देश} (deś) \\``nation / country''
+	\item \textbf{\textit{meli}} — \textit{noun}, from Tok Pisin, \textit{meri} \\``woman / female / female-identifying person''
+	\item \textbf{\textit{empi}} — \textit{noun}, from English, \textit{enbi} \\``non-binary person''
+	\item \textbf{\textit{laki}} — \textit{noun}, from Indonesian, \textit{laki} \\``man / male / male-identifying person''
+	\item \textbf{\textit{mama}} — \textit{noun}, from various languages \\``mother / mama / mom / female-identifying parent''
+	\item \textbf{\textit{nana}} — \textit{noun}, by analogy from $\langle$mama / papa$\rangle$ ``mother / father'' \\``non-binary parent''
+	\item \textbf{\textit{papa}} — \textit{noun}, from various languages \\``father / papa / dad / male-identifying parent''
+	\item \textbf{\textit{kafe}} — \textit{noun}, from Spanish, \textit{café} \\``coffee / coffee beans''
+	\item \textbf{\textit{ca}} — \textit{noun}, from Mandarin, 茶 (chá) \\``tea / tea bag / tea leaves''
+	\item \textbf{\textit{palu}} — \textit{noun}, from Telugu, {\tlgfont పాలు} (pālu) \\``milk / sap / juice''
+	\item \textbf{\textit{ciwa}} / \textbf{\textit{ci-wa}} — \textit{noun}, calque of Mandarin, 食物 (shíwù), ``eat-thing'' \\``food / meal / dish''
+	\item \textbf{\textit{tinkewa}}  / \textbf{\textit{tinke-wa}} — \textit{noun}, calque of Japanese, 飲み物 (nomimono), ``drink-thing'' \\``drink / beverage''
+	\item \textbf{\textit{sahin}} — \textit{adjective}, from Arabic, {\afont  سَاخِن } (sāḵin) \\``hot / warm / heated''
+	\item \textbf{\textit{citala}} — \textit{adjective}, from Hindustani, {\hmfont शीतल} (śītal) \\``cold / cool / cooled''
+	\item \textbf{\textit{umai}} — \textit{adjective}, from Japanese, うまい (umai) \\``delicious / tasty''
+	\item \textbf{\textit{ci}} — \textit{verb}, from Mandarin, 吃 (chī) \\``to eat / to consume / to ingest''
+	\item \textbf{\textit{tinke}} — \textit{verb}, from German, \textit{trinke(n)} \\``to drink / to imbibe''
+	\item \textbf{\textit{piala}} — \textit{noun}, from Hindustani, {\hmfont  प्याला} (pyālā) \\ ``cup / mug / glass / drinking vessel''
+	\item \textbf{\textit{halaya}} — \textit{noun}, from Arabic, {\afont  غَلَّايَة } (ḡallāya) \\ ``teakettle / kettle / (water) boiler''
+	\item \textbf{\textit{ale}} — \textit{verb}, from French, \textit{aller} \\``to go / to move / to walk''
+	\item \textbf{\textit{hatie}} — \textit{verb}, from Russian, хотеть (xotétʹ) \\ ``to want / to desire''
+	\item \textbf{\textit{pana}} — \textit{verb}, from Hindustani, {\hmfont पाना} (pānā) \\ ``to get / to obtain / to gain''
+	\item \textbf{\textit{tei}} — \textit{noun}, from Naijá, \textit{dey} \\ ``day''
+	\item \textbf{\textit{suo}} — \textit{adjective}, from Mandarin, 昨 (zuó) \\ ``yesterday / recent(ly)''
+	\item \textbf{\textit{suotei}} / \textbf{\textit{suo-tei}} — \textit{noun /  adjective} \\ ``yesterday''
+	\item \textbf{\textit{nai}} — \textit{adjective}, from Vietnamese, \textit{nay} \\ ``today / current(ly) / ongoing / present(ly)''
+	\item \textbf{\textit{naitei}} / \textbf{\textit{nai-tei}} — \textit{noun /  adjective} \\ ``today''
+	\item \textbf{\textit{ala}} — \textit{adjective}, Hindustani, {\hmfont अगला} (aglā) \\ ``next / subsequent''
+	\item \textbf{\textit{alatei}} / \textbf{\textit{ala-tei}} — \textit{noun /  adjective} \\ ``tomorrow''
+	\item \textbf{\textit{ta}} — \textit{adjective}, from Vietnamese, \textit{tất} \\``whole / all''
+	\item \textbf{\textit{usa}} — \textit{verb}, from Spanish, \textit{usar} \\``to use /  to utilize''
+	\item \textbf{\textit{leka}} — \textit{verb}, from Bengali, {\benfont লেখা} (lekha) \\``to write /  to compose''
+	\item \textbf{\textit{kan}} — \textit{verb}, from Mandarin, 看 (kàn) \\``to look (at) / to see / to watch / to read''
+	\item \textbf{\textit{saikale}}  — \textit{noun}, from Hindustani, {\hmfont साइकल} (sāikal) \\``bicycle / bike''
+	\item \textbf{\textit{motosaikale}} / \textbf{\textit{moto-saikale}}  — \textit{noun}, from $\langle$moto$\rangle$ + $\langle$saikale$\rangle$ \\``motorcycle / moped / scooter''
+	\item \textbf{\textit{auto}} / \textbf{\textit{auto-mopile}} / \textbf{\textit{automopile}}  — \textit{noun}, from Spanish, \textit{automóvil} \\``car / automobile''
+	\item \textbf{\textit{kali}}  — \textit{noun}, from Hindustani, {\hmfont गली} (galī) \\ ``street / lane / road / route''
+	\item \textbf{\textit{mita}}  — \textit{noun}, from Hindustani, {\hmfont मित्र} (mitra) \\ ``friend / companion''
+	\item \textbf{\textit{mitaeme}} / \textbf{\textit{mita-eme}}  — \textit{noun}, from $\langle$mita$\rangle$ ``friend'' + $\langle$eme$\rangle$ ``language'' \\ ``language of friends''
+	
+\end{itemize}
+
+\section{THE UNIVERSAL DECLARATION OF HUMAN RIGHTS}
+
+Let's close with a translation of the Universal Declaration of Human Rights, or in Mitaeme, \textit{Amma Pesin Cuanli Peyanname}.
+Hopefully, this will give you a small taste of the language in-action.\\
+\\
+\hspace*{1cm}%
+\begin{minipage}{.8\textwidth}%
+ta pesin pei siyou akuce hafe seime mayata i cuanli.\\
+all person \textsc{pv} free birth have same dignity \textsc{conj} right\\
+\textit{All human beings are born free and equal in dignity and rights.}\\
+\\
+ta ye pei tewa locika i tawiya\\
+all \textsc{3 pv} give logic \textsc{conj} conscience\\
+\textit{They are endowed with reason and conscience}\\
+\\
+i solen niau pehanten pa mita te ceitu.\\
+\textsc{conj oblig recip} treat \textit{instr} friend \textit{gen} manner\\
+\textit{and should act towards one another in a spirit of brotherhood.}
+\end{minipage}%
+
+\end{document}
